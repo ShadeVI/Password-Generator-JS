@@ -12,6 +12,7 @@ lengthEl.addEventListener('change', e => StrengthChecker(e.target.value));
 lengthEl.addEventListener('keyup', e => StrengthChecker(e.target.value));
 
 function StrengthChecker(length){
+  checkLength(length);
   if(length > 0 && length < 6){
     lengthStrengthText.textContent = "Weak!";
   } else if (length >= 6 && length < 12) {
