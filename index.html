@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <p class="text-info hide"></p>
+    <div class="box">
+      <div class="row">
+        <label for="passLength">Length: </label>
+        <input type="number" class="passLength" id="passLength" max="30">
+        <p class="lengthP">Strength: <span id="lengthStrength"></span></p>
+      </div>
+      <div class="row">
+        <input type="text" class="inputPassword" id="password" disabled="true">
+      </div>
+    <button class="btn" id="generate">Generate password</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
